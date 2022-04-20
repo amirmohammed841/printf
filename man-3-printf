@@ -1,0 +1,18 @@
+.TH man 3 "18 April 2022" "_printf man page"
+.SH NAME
+.B _printf
+- formatted output conversion.
+.SH SYNOPSIS
+.B #include "main.h"
+.SH DESCRIPTION
+.B _printf()
+Prints to standard output as built in variadic function printf
+.SH Return value
+on success full return , these functions return the number of characters printed, excluding null that used for ending strings
+
+
+
+
+.SH AUTHOR
+Amir Mohammed, Bete Goshme
+
