@@ -16,6 +16,7 @@ int (*caller(const char *format))(va_list)
 		{"%", print_pct},
 		{"d", print_dec},
 		{"i", print_dec},
+		{"b", print_bin},
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t; i++)

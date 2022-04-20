@@ -8,7 +8,7 @@
  *@format:next format to%
  *Return:int
  */
-int checker(char arr[], char format)
+int checker(char *arr, char format)
 {
 	int count = 0;
 	int k = 0;
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 	va_list list;
 	int get;
-	char arr[] = {'c', 'd', '%', 'i', 's', '\0'};
+	char *arr = "cdisb%";
 
 	va_start(list, format);
 
