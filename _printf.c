@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 	va_list list;
 	int get;
-	char *arr = "cdisb%";
+	char *arr = "cdisbuoxX%";
 
 	va_start(list, format);
 

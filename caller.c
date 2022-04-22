@@ -17,6 +17,10 @@ int (*caller(const char *format))(va_list)
 		{"d", print_dec},
 		{"i", print_dec},
 		{"b", print_bin},
+		{"u", print_un},
+		{"o", print_oct},
+		{"x", print_hex},
+		{"X", print_HEX},
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t; i++)

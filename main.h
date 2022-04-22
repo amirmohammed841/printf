@@ -27,4 +27,8 @@ int print_char(va_list args);
 int print_pct(va_list args);
 int print_dec(va_list args);
 int print_bin(va_list args);
+int print_un(va_list args);
+int print_oct(va_list args);
+int print_hex(va_list args);
+int print_HEX(va_list args);
 #endif

@@ -28,3 +28,77 @@ int print_bin(va_list list)
 	}
 	return (j);
 }
+
+/**
+ *print_un - prints unsigned integer number
+ *@list:lists down argument from unknown variable
+ *
+ *Return:int
+ */
+
+int print_un(va_list list)
+{
+	unsigned int value  = va_arg(list, unsigned int);
+	int j = 0;
+	unsigned int rem;
+	unsigned int arr[32];
+	int k = 0;
+
+	if (value < 1)
+	{
+		j += _putchar(value + '0');
+		return (j);
+	}
+	while (value > 0)
+	{
+		rem = value % 10;
+		arr[k] = rem;
+		value = value / 10;
+		k++;
+	}
+	k = k - 1;
+	while (k >= 0)
+	{
+		j += _putchar(arr[k] + '0');
+		k--;
+	}
+	return (j);
+}
+/**
+ *print_oct - functions to print number in octal
+ *@list:variable argument
+ *Return:int
+ *
+ *
+ */
+int print_oct(va_list list)
+{
+	unsigned int value = va_arg(list, unsigned int);
+
+	int j = 0;
+	int i = 0;
+	int arr[32];
+
+	unsigned int rem;
+
+	if (value < 1)
+	{
+		j += _putchar(value + '0');
+		return (j);
+	}
+	while (value > 0)
+	{
+		rem = value % 8;
+		arr[i] = rem;
+		value = value / 8;
+		i++;
+	}
+	i = i - 1;
+	while (i >= 0)
+	{
+		j += _putchar(arr[i] + '0');
+		i--;
+	}
+	return (j);
+}
+
