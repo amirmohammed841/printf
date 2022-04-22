@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *caller - calls apropriate function
+ *caller - calls apropriate
  *@format:char
  *Return:int
  */
